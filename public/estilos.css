@@ -1,0 +1,315 @@
+
+/* Define la fuente personalizada */
+@font-face {
+    font-family: 'Fuente ANTON'; /* Asigna un nombre a tu fuente */
+    src: url('fuentes/Anton-Regular.ttf') format('truetype'); /* Ruta a tu fuente descargada y su formato */
+}
+/* Estilos para el encabezado */
+header {
+    font-family: 'Fuente ANTON';
+  background-color: #ffffff; /* Cambia el color de fondo según tu preferencia */
+  position: fixed; /* Hace que el encabezado sea fijo en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  padding: 10px 0; /* Espaciado interno superior e inferior */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para el logo */
+#logo {
+  width: 150px; /* Tamaño del logo */
+  height: auto;
+}
+
+/* Estilos para las redes sociales */
+#redes-sociales {
+    margin-right: 50px;
+  display: flex;
+  gap: 10px; /* Espacio entre los íconos de redes sociales */
+}
+
+#redes-sociales a {
+  text-decoration: none;
+}
+
+#redes-sociales img {
+    
+  width: 30px; /* Tamaño de los íconos de redes sociales */
+  height: auto;
+  transition: transform 0.2s; /* Efecto de cambio de tamaño al pasar el mouse */
+}
+
+#redes-sociales img:hover {
+  transform: scale(1.2); /* Hace que los íconos se agranden al pasar el mouse */
+}
+/* Estilos para los botones de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000000; /* Cambia el color del texto de los botones según tu preferencia */
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: #ff8000; /* Cambia el color al pasar el mouse sobre los botones */
+  }
+
+  /* Estilos para el div con la frase motivacional */
+.frase-motivacional {
+    font-family: 'Fuente ANTON';
+    background-color: #fff; /* Color de fondo del div */
+    padding: 20px; /* Espaciado interno del div */
+    text-align: center; /* Centrar el contenido */
+    border-radius: 10px; /* Esquinas redondeadas del div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el div */
+    margin-top: 100px; /* Espaciado superior para evitar que el header lo tape */
+  }
+  
+  /* Estilos para el título H1 */
+  .frase-motivacional h1 {
+    font-size: 24px; /* Tamaño del título */
+    color: #333; /* Color del texto del título */
+  }
+  
+  /* Estilos para el párrafo */
+  .frase-motivacional p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #666; /* Color del texto del párrafo */
+  }
+  
+  /* Estilos para la imagen */
+  .frase-motivacional img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del div */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    margin-top: 20px; /* Espaciado superior de la imagen con respecto al texto */
+  }
+/* Estilos para el nuevo div con caja gris */
+.mejor-campus {
+    text-align: center; /* Centrar el contenido */
+    margin-top: 20px; /* Espaciado superior con respecto al div anterior */
+  }
+  
+  /* Estilos para la caja gris */
+  .caja-gris {
+    font-family: 'Fuente ANTON';
+    background-color: #333; /* Color de fondo de la caja gris */
+    color: #fff; /* Color del texto dentro de la caja gris */
+    padding: 20px; /* Espaciado interno de la caja */
+    border-radius: 10px; /* Esquinas redondeadas de la caja */
+  }
+  
+  /* Estilos para el texto dentro de la caja gris */
+  .caja-gris p {
+    font-size: 18px; /* Tamaño del texto */
+  }
+    
+
+  /* Estilos para la galería de imágenes */
+.galeria {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan si no caben en una sola fila */
+    gap: 10px; /* Espaciado entre las imágenes */
+  }
+  
+  /* Estilos para cada imagen */
+  .imagen {
+    
+    flex-basis: calc(33.33% - 10px); /* Tamaño de cada imagen (33.33% de ancho con 10px de espacio entre ellas) */
+    
+  }
+  
+  .imagen img {
+    border-radius: 30px;
+    max-width: 100%; /* Asegura que las imágenes no se desborden del div */
+    height: auto;
+  }
+
+  .imagen img:hover{
+    transform: scale(1.04);
+    transition: transform 0.3s;
+    
+  }
+
+  .imagen img:not(:hover) {
+    transform: scale(1); /* Vuelve a la escala original */
+    transition: transform 0.5s; /* Duración de la animación de retorno */
+}
+  /* Estilos para la sección de horarios y precios */
+.horarios-precios {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para el título */
+  .horarios-precios h2 {
+    font-family: 'Fuente ANTON';
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+ /* Estilos para la galería de 4 imágenes */
+.galeria-4 {
+    display: flex;
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    gap: 10px; /* Espaciado entre las imágenes */
+  }
+  
+  /* Estilos para cada imagen */
+  .galeria-4 .imagen {
+    flex-basis: calc(25% - 10px); /* Cada imagen ocupa el 25% del ancho con espacio entre ellas */
+  }
+  
+  .galeria-4 .imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Estilos para el footer */
+footer {
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para los enlaces de redes sociales */
+  .footer-social a img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Estilos para los enlaces de redes sociales al pasar el mouse */
+  .footer-social a:hover {
+    opacity: 0.8;
+  }
+
+
+
+  /* Estilos para el formulario de contacto en una caja con bordes redondeados */
+/* Estilos para el formulario de contacto más pequeño */
+form {
+  margin-top: 195px !important;
+  text-align: left;
+  background-color: #f5f5f5;
+  padding: 81px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 541px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Estilos para los botones de carpetas */
+/* Estilos para los botones de carpetas */
+.carpeta {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  background-color: #0074D9; /* Color de fondo */
+  color: #FFF; /* Color de texto */
+  width: 350px; /* Ancho fijo para los botones */
+  height: 300px; /* Alto fijo para los botones */
+  background-image: url('imagenes/cespedboton.png');
+  border: 1px solid #0056b3; /* Borde */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  font-family: "Anton-Regular";
+  line-height: 120px;
+}
+
+.carpeta:hover {
+  background-color: #0056b3; /* Cambio de color de fondo al pasar el mouse */
+}
+
+.carpeta img {
+  width: 100px; /* Tamaño de la imagen de carpeta */
+  height: auto;
+}
+
+.carpeta span {
+  display: block;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+

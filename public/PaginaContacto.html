@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenadores</title>
+    <!-- Enlaza tu hoja de estilos CSS si la tienes -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+
+
+        
+        <!-- Logo de la escuela de porteros -->
+        <img src="imagenes/LOGO.png" alt="Porteria Cero Granada" id="logo">
+        <h1>PORTERIACERO GRANADA</h1>
+        <nav>
+                    <ul>
+                        <li><a href="PaginaPrincipal.html">Home</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="paginaGaleria.html">Galeria</a></li>
+                        <li><a href="PaginaEntrenadores.html">Entrenadores</a></li>
+                        <li><a href="PaginaContacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        <!-- Enlaces a las redes sociales -->
+        <div id="redes-sociales">
+            <a href="https://www.facebook.com/Porteriacero" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/porteriacero" target="_blank">
+                <img src="imagenes/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        
+    </header>
+
+
+    
+    <main>
+        <div class="formulario">
+        <form action="enviar.php" method="post">
+            <h1>Contacto</h1>
+        <p>¡Estamos aquí para ayudarte! Por favor, completa el formulario y nos pondremos en contacto contigo pronto.</p>
+        <!-- Formulario de contacto -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+    </main>
+
+       
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imagenes/LOGO.png" alt="Logo del footer">
+            </div>
+            <p>PORTERIACERO GRANADA - Desarrollado por NekoDev</p>
+            <div class="footer-info">
+                <p>Dirección: Calle de la Escuela, Granada</p>
+                <p>Teléfono: +123456789</p>
+                <p>Email: info@porteriacerogranada.com</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Porteriacero"><img src="imagenes/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/porteriacero"><img src="imagenes/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+</body>
+</html>
